@@ -30,7 +30,8 @@ export default {
       partyInfo: [
         { title: 'Datum & Zeit', details: '5. Juli 2024, 12:00 Uhr - Open End' },
         { title: 'Dresscode', details: 'Lässige Sommerkleidung' },
-        { title: 'Aktivitäten', details: 'Wocheende an der Jade mit Afterparty bei uns' },
+        { title: 'Aktivitäten', details: 'Alkohol, Koks und Nutten' },
+        { title: 'Der Plan', details: 'Vortrinken und Afterparty bei uns' },
         { title: 'Essen & Getränke', details: 'Bier, Bier und Bier ' },
       ],
     };
