@@ -138,7 +138,7 @@ header h1 {
 @media (max-width: 600px) {
   header {
     width: 90%;
-    font-size: 24px;
+    font-size: 16px;
     padding: 15px;
   }
 
