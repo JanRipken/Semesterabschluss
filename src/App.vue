@@ -30,7 +30,7 @@
             <p>{{ event.activity }}</p>
           </li>
         </ul>
-        <button @click="scrollTo('section2')" class="scroll-button">Zurück nach oben ↑</button>
+        <button @click="scrollTo('section2')" class="scroll-button">Allgemeine Informationen ↑</button>
         <button @click="scrollTo('section4')" class="scroll-button">Anreiseinformationen ↓</button>
       </div>
     </section>
@@ -42,19 +42,10 @@
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d602.282562854184!2d8.110818534503748!3d53.517629804975385!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47b6930947ae5291%3A0x9d72643092521aa7!2sMoor%20Beauty!5e1!3m2!1sde!2sde!4v1719472841141!5m2!1sde!2sde" width="700" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
         <button @click="scrollTo('section3')" class="scroll-button">Zurück zur Zeitleiste ↑</button>
-        <button @click="scrollTo('section5')" class="scroll-button">Zur Umfrage ↓</button>
       </div>
     </section>
 
-    <section id="section5" class="background-section" :style="section5Style">
-      <div class="content">
-        <h2>Teilnahmebestätigung</h2>
-        <div class="form-container">
-          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1vwXNNb1fHw3AMecxyLP4QKFvARw69hBAd8Z8jOQDBiCOxQ/viewform?embedded=true" width="640" height="466" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
-        </div>
-        <button @click="scrollTo('section4')" class="scroll-button">Zurück zur Karte ↑</button>
-      </div>
-    </section>
+  
   </div>
 </template>
 
@@ -64,16 +55,16 @@ export default {
   data() {
     return {
       partyInfo: [
-        { title: 'Datum & Zeit', details: '5. Juli 2024, 13:00 Uhr - Open End' },
+        { title: 'Datum & Zeit', details: '5. Juli 2024, 15:00 Uhr - Open End' },
         { title: 'Dresscode', details: 'Lässige Sommerkleidung' },
         { title: 'Aktivitäten', details: 'Besuch des Wochenende an der Jade' },
         { title: 'Der Plan', details: 'Vortrinken und Afterparty bei uns' },
-        { title: 'Info', details: 'Wir stellen nur Bier, Charly und ein paar Kleinigkeiten. Solltet ihr etwas anderes wollen, bringt es bitte selbst mit.' },
+        { title: 'Info', details: 'Wir stellen nur Bier, Charly und ein paar Kleinigkeiten. Solltet ihr etwas anderes wollen, bringt es bitte selbst mit. Essen können wir auf dem Jade Fest oder wir bestellen in der Nacht etwas' },
       ],
       timeline: [
-        { time: '13:00 Uhr', activity: 'Treffen bei uns' },
-        { time: '16:00 Uhr', activity: 'Besuch des Wocheende an der Jade' },
-        { time: 'ab 21:00 Uhr', activity: 'Afterparty' },
+        { time: '15:00 Uhr', activity: 'Treffen bei uns' },
+        { time: '17:30 Uhr', activity: 'Besuch des Wocheende an der Jade' },
+        { time: 'ab 23:00 Uhr', activity: 'Afterparty in der WG' },
       ],
     };
   },
@@ -104,20 +95,13 @@ export default {
     },
     section4Style() {
       return {
-        'background-image': `url(${require('@/assets/schiffe.jpeg')})`,
-        'background-size': 'cover',
-        'background-position': 'center',
-        'height': '100vh',
-      };
-    },
-    section5Style() {
-      return {
         'background-image': `url(${require('@/assets/ende.jpeg')})`,
         'background-size': 'cover',
         'background-position': 'center',
         'height': '100vh',
       };
     },
+  
   },
   methods: {
     scrollTo(sectionId) {
