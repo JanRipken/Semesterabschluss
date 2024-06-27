@@ -46,17 +46,15 @@
       </div>
     </section>
 
-
     <section id="section5" class="background-section" :style="section5Style">
       <div class="content">
         <h2>Teilnahmebestätigung</h2>
         <div class="form-container">
-         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1vwXNNb1fHw3AMecxyLP4QKFvARw69hBAd8Z8jOQDBiCOxQ/viewform?embedded=true" width="640" height="466" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
+          <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSd1vwXNNb1fHw3AMecxyLP4QKFvARw69hBAd8Z8jOQDBiCOxQ/viewform?embedded=true" width="640" height="466" frameborder="0" marginheight="0" marginwidth="0">Wird geladen…</iframe>
         </div>
         <button @click="scrollTo('section4')" class="scroll-button">Zurück zur Karte ↑</button>
       </div>
     </section>
-
   </div>
 </template>
 
@@ -112,7 +110,7 @@ export default {
         'height': '100vh',
       };
     },
-section5Style() {
+    section5Style() {
       return {
         'background-image': `url(${require('@/assets/ende.jpeg')})`,
         'background-size': 'cover',
@@ -172,7 +170,8 @@ header h1 {
 }
 
 .content {
-  width: 600px;
+  max-width: 600px;
+  width: 80vw;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
@@ -206,7 +205,6 @@ header h1 {
 .timeline {
   list-style: none;
   padding: 0;
-  
 }
 
 .timeline-item {
@@ -224,12 +222,11 @@ header h1 {
 
 .form-container {
   width: 100%;
-  height: calc(50vh ); /* subtract header height if applicable */
+  height: calc(50vh - 60px); /* subtract header height if applicable */
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
-
 }
 
 iframe {
