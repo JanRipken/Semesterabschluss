@@ -172,8 +172,7 @@ header h1 {
 }
 
 .content {
-  max-width: 600px;
-  width: 100vh;
+  width: 600px;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.5);
   border-radius: 10px;
