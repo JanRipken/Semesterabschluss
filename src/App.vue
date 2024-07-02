@@ -67,7 +67,7 @@ export default {
     return {
       partyInfo: [
         { title: 'Datum & Zeit', details: '5. Juli 2024, 15:00 Uhr - Open End' },
-        { title: 'Dresscode', details: ' Von Piratenverkleidung bis zu Hawaihemden und Sommerkleidern' },
+        { title: 'Dresscode', details: 'Sommerkleidung (Wetterfest)' },
         { title: 'Aktivitäten', details: 'Besuch des Wochenende an der Jade' },
          { title: 'Info', details: 'Wir stellen eine gewisse Menge Bier, Charly und ein paar Kleinigkeiten bereit. Bringt dennoch am besten das, was ihr trinken wollt, selbst mit. Essen können wir auf dem Wochenende an der Jade oder wir bestellen sonst in der Nacht noch etwas.' }, 
 
