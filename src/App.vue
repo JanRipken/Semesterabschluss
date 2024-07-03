@@ -75,6 +75,7 @@ export default {
       timeline: [
         { time: '15:00 Uhr', activity: 'Treffen bei uns' },
         { time: '17:30 Uhr', activity: 'Besuch des Wocheende an der Jade' },
+        { time: '18:00 Uhr', activity: 'Public Viewing beim Pumpwerk' },
         { time: 'ab 23:00 Uhr', activity: 'Afterparty in der WG' },
       ],
     };
